@@ -1,0 +1,11 @@
+{%extends 'baze.html' %}
+{% block content%}
+{%for i in chat%}
+    <h1>{{i[0].name}}{{i[1].text}}</h1>
+{%endfor%}
+<form method="post">
+    {{form.hidden_tag()}}
+      <p>{{form.text.label}} {{form.text(size=30)}}</p>
+      <p>{{form.submit.label}} {{form.submit(size=30)}}</p>
+</form>
+{%endblock%}

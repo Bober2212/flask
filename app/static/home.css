@@ -1,0 +1,73 @@
+
+.button{
+    border:1px solid black;
+    border-radius:3px;
+    text-decoration:none;
+    background:green;
+    padding:4px 20px;
+}
+
+.head{
+    position:fixed;
+    width:100%;
+    height:25px;
+    background: blue;
+    border-radius:3px;
+
+}
+
+.beck_color{
+    position:relative;
+    top:0px;
+    width:100%;
+    height:100vh;
+    background: yellow;
+    animation:1s enter linear;
+}
+
+@keyframes enter{
+    0%{
+        rotate(90deg);
+    }
+    100%{
+         rotate(180deg);
+
+    }
+
+}
+
+
+.color_text{
+     position:relative;
+     border:1px solid black;
+     border-radius:3px;
+     height:40px;
+     width:25%;
+     background:green;
+
+}
+
+.beck_coloruser{
+    position:relative;
+    top:0px;
+    width:100%;
+    height:100vh;
+    background: green;
+
+}
+
+.beck_colorukrain{
+    position:relative;
+    left:50%:
+    width:50%;
+    height:100%;
+    background: yellow;
+
+}
+.beck_colorukrain2{
+    position:relative;
+    width:50%;
+    height:100%;
+    background: blue;
+
+}

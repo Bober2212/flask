@@ -1,0 +1,23 @@
+{%extends 'baze.html' %}
+{% block content%}
+ <link href="/static/home.css" rel="stylesheet">
+<form method="post">
+
+ <div class="beck_coloruser">
+ <div class="beck_colorukrain">
+      <div class="beck_colorukrain2">
+    <label for="1">Name</label>
+    <input type="text" value="{{curent_user.name}}" id="1" name="name">
+    <label for="2">Password</label>
+    <input type="text" id="2" name="password" >
+    <label for="3">Email</label>
+    <input type="text" value="{{curent_user.email}}" id="3" name="email">
+    <input type="submit">
+     </div>
+     </div>
+     </div>
+    {% if user  %}
+    <script>window.onload=alert("Upgrade file")</script>
+    {% endif %}
+</form>
+{%endblock%}

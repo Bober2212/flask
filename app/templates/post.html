@@ -1,0 +1,21 @@
+{%extends 'baze.html' %}
+{% block content%}
+ <div class="beck_color">
+    <title>Home</title>
+    <h1>{{post.text}}</h1>
+    <h1>{{post.create_att}}</h1>
+    <h1>{{post.user}}</h1>
+{%for i in comentairs%}
+     <div class="color_text">
+    <h6>{{i.text}}</h6>
+     </div>
+{%endfor%}
+
+     <a class="beck_color"></a>
+<form method="post">
+    {{form.hidden_tag()}}
+      <p>{{form.text.label}} {{form.text(size=30)}}</p>
+      {{form.submit}}
+</form>
+ </div>
+{%endblock%}

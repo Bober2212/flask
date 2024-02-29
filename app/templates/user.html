@@ -1,0 +1,8 @@
+{%extends 'baze.html' %}
+{% block content%}
+    <h1>{{p.name}}</h1>
+    <h1>{{p.password}}</h1>
+    <h1>{{p.email}}</h1>
+    <h1>{{p.create_att}}</h1>
+    <a href="/send_message/{{ p.id}}">Send Message </a>
+{%endblock%}

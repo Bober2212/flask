@@ -1,0 +1,8 @@
+{%extends 'baze.html' %}
+{% block content%}
+    <title>Home</title>
+{%for i in posts%}
+    <a href="/post/{{ i.id}}"> {{i.create_att}}</a>
+    <a href="/post/{{ i.id}}"> {{i.user}}</a>
+{%endfor%}
+{%endblock%}
